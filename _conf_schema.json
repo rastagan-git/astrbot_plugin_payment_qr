@@ -1,0 +1,30 @@
+{
+  "enabled": {
+    "description": "是否启用自动发送收款码",
+    "type": "bool",
+    "default": true
+  },
+  "qr_image_path": {
+    "description": "收款码图片路径（相对于 data 目录或绝对路径）",
+    "type": "string",
+    "hint": "例如：payment_qr.png（放在 data 目录下），或填写绝对路径如 /home/user/qr.png",
+    "obvious_hint": true
+  },
+  "keywords": {
+    "description": "触发发送收款码的关键词列表",
+    "type": "list",
+    "default": ["付款", "转账", "打赏", "赞赏", "支付", "收款", "多少钱", "怎么付", "费用", "价格", "收费", "买单", "结账", "付钱", "给钱", "汇款"]
+  },
+  "reply_text": {
+    "description": "发送收款码时附带的文字",
+    "type": "string",
+    "default": "请扫描下方收款码完成付款~"
+  },
+  "match_mode": {
+    "description": "关键词匹配模式",
+    "type": "string",
+    "options": ["fuzzy", "exact"],
+    "default": "fuzzy",
+    "hint": "fuzzy（模糊匹配）：'付个款'也能匹配'付款'；exact（精确匹配）：消息必须直接包含关键词"
+  }
+}

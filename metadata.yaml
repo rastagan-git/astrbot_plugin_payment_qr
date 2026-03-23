@@ -1,0 +1,7 @@
+name: astrbot_plugin_payment_qr
+display_name: 收款码自动发送
+description: 根据聊天内容中的关键词自动发送收款码图片，支持模糊语义匹配
+author: user
+version: 1.0.0
+repo: "https://github.com/rastagan-git/astrbot_plugin_payment_qr"
+astrbot_version: ">=4.0.0"
